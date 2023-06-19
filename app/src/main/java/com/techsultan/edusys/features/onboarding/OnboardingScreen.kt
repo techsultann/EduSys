@@ -66,13 +66,14 @@ fun OnBoardingScreen(
         ) {
 
             repeat(3) { iteration ->
-                val color = if (pagerState.currentPage == iteration) MaterialTheme.colors.primary else Color.White
+                val color = if (pagerState.currentPage == iteration)
+                    MaterialTheme.colors.primary else Color.White
                 Box(
                     modifier = Modifier
-                        .padding(2.dp)
+                        .padding(3.dp)
                         .clip(CircleShape)
                         .background(color)
-                        .size(20.dp)
+                        .size(5.dp)
 
                 )
             
@@ -85,7 +86,7 @@ fun OnBoardingScreen(
         ) {
            // welcomeViewModel.saveOnBoardingState(true)
             navController.popBackStack()
-            navController.navigate(Screen.SignupScreen.route)
+            navController.navigate(Screen.LoginScreen.route)
             
         }
 }

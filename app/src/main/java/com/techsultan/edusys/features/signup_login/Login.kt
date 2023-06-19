@@ -29,6 +29,7 @@ import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
 import com.techsultan.edusys.components.*
+import com.techsultan.edusys.screens.HOME_ROUTE
 import com.techsultan.edusys.screens.Screen
 
 
@@ -100,12 +101,11 @@ private fun LazyListScope.loginHeader(navController: NavHostController) {
             EduSysButton(
                 onClick = {
                     navController.popBackStack()
-                    navController.navigate(route = Screen.HomeScreen.route)
+                    navController.navigate(HOME_ROUTE)
                 },
                 modifier = Modifier.fillMaxWidth(),
                 colors = ButtonDefaults.buttonColors(
-                    contentColor = Color.Black
-                )
+                    contentColor = Color.White)
             ) {
 
                 Text(text = "Sign in")

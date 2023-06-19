@@ -137,7 +137,7 @@ private fun LazyListScope.signupHeader(navController: NavController) {
                 },
                 modifier = Modifier.fillMaxWidth(),
                 colors = ButtonDefaults.buttonColors(
-                    contentColor = Color.Black
+                    contentColor = Color.White
                 )
             ) {
  
